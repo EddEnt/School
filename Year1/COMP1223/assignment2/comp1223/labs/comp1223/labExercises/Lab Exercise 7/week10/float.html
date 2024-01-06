@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Element</title>
+    <meta name="description" content="Displaying block elements side by side in HTML">
+    <meta name="author" content="Edward Entecott">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header, footer{
+            background-color: black;
+            color: yellow;
+            padding: 10px;
+        }
+        html, body{
+            height: 100%;
+        }
+        main{
+            height: 80%;
+        }
+        aside{
+            width: 25%;
+            height: 70%;
+            background-color: lightblue;
+            float: right;
+        }
+        #section-right{
+            position: relative;
+            width: 70%;
+            height: 70%;
+            float: left;
+            background-color: aquamarine;
+        }
+        .similar{
+            height: 70%;
+            padding: 5px;
+        }
+        #section-bottom{
+            clear: both;
+        }
+        #box{
+            width: 80px;
+            height: 80px;
+            background: yellow;
+            position: absolute;
+            left: 30px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Please don't hate me!</h1>
+    </header>
+    <main>
+    <aside class="similar">
+        <p>Aside to the left</p>
+    </aside>
+    <section id="section-right" class="similar">
+        <p>Section to the right</p>
+        <div id="box">Box</div>
+    </section>
+    <section id="section-bottom">
+        <p>Section that takes the entire block</p>
+    </section>
+    </main>
+    <footer>
+        <p>&copy: 2018 By Edward Entecott</p>
+    </footer>
+<script src=http://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

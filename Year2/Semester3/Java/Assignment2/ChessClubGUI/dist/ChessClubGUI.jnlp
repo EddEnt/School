@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ChessClubGUI.jnlp">
+  <information>
+    <title>ChessClubGUI</title>
+    <vendor>Alec</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ChessClubGUI.jar" size="10074" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="Initializing view, please wait ..."  name="ChessClubGUI" />
+  <update check="always"/>
+</jnlp>

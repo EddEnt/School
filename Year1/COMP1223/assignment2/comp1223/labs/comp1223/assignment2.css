@@ -1,0 +1,43 @@
+    a:link{ /* CSS for changing color of link text */
+        color: darkslategray;
+        text-decoration: none;
+    }
+
+    a:visited{ /* Css for changing color of visited link text*/
+        color: lightblue;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover{ /* CSS for changing color of hover over link text*/
+        background-color: gray;
+        color: yellow;
+        font-weight: bold;
+        width: auto;
+        }
+    .imgtab{ /* CSS for the Image table*/
+        margin: auto;
+        width: 40%;
+        padding: 10px;
+
+    }
+
+    .vidtable{ /* CSS for Youtube video table*/
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        border-spacing: 50px
+    }
+
+    nav{ /* CSS for navigation bar*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 38%;
+    }
+
+    .vidtext{ /* CSS for text underneath Youtube videos */
+        color: darkslategray;
+    }
+
+

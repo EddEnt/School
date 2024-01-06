@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Rowspan</title>
+    <meta name="description" content="Week 9 practice on Tables in HTML">
+    <meta name="author" content="Edward Entecott">
+    <style>
+        #student-table, #student-table tr, #student-table td, #student-table th{
+            border: 2px solid gray;
+            border-collapse: collapse;
+        }
+        #table-head{
+            background-color: black;
+            color: yellow
+        }
+        #table-body tr:nth-child(even){
+            background-color: lightblue;
+            color: yellow
+        }
+        #table-body{
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <table id="student-table">
+        <thead id="table-head">
+        <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Course Code</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td rowspan="4">COMP1223</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>11111111</td>
+            </tr>
+            <tr>
+                <td>July 1st, 2018</td>
+                <td>2 Students</td>
+            </tr>
+            <tr>
+                <td>Sandy Milne</td>
+                <td>12122211</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td>COMP1231</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td>COMP1231</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td>COMP1231</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td>COMP1231</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Table Space</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+    <table>
+
+    </table>
+
+</main>
+
+<script src=http://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

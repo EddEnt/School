@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and Nesting</title>
+    <meta name="description" content="Week 9 practice on Tables in HTML">
+    <meta name="author" content="Edward Entecott">
+    <style>
+        #student-table, #student-table tr, #student-table td, #student-table th{
+            border: 2px solid gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Course Code</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+                <td>COMP1223</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>11111111</td>
+                <td>COMP1223</td>
+            </tr>
+            <tr>
+                <td colspan="2">July 1st, 2018</td>
+                <td>2 Students</td>
+            </tr>
+            <tr>
+                <td>Sandy Milne</td>
+                <td>12122211</td>
+                <td>COMP1223</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Number of Students is 3</td>
+            </tr>
+
+        </table>
+
+        <table id="employee-table">
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10101011</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>11111111</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <script src=http://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

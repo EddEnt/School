@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chessclubgui.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane fx:id="tabPane" layoutY="66.0" prefHeight="660.0" prefWidth="1287.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab_viewMembers" text="View Members">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="707.0" prefWidth="1278.0">
+                     <children>
+                        <TableView id="table_memberList" fx:id="table_memberList" layoutY="-1.0" prefHeight="633.0" prefWidth="652.0" />
+                        <Button id="btn_addWin" layoutX="774.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleAddWinAction" text="Add Win" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="754.0" layoutY="124.0" prefHeight="35.0" prefWidth="303.0" text="Current selected member:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button id="btn_addLoss" layoutX="898.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleAddLossAction" text="Add Loss">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="754.0" layoutY="174.0" prefHeight="133.0" prefWidth="355.0">
+                           <children>
+                              <HBox prefHeight="20.0" prefWidth="95.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="Name:" />
+                                    <Label fx:id="lbl_memberFirstName" prefHeight="17.0" prefWidth="125.0" text="&lt;data&gt;" />
+                                    <Label fx:id="lbl_memberLastName" prefHeight="17.0" prefWidth="125.0" text="&lt;data&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="95.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="Total Games:" />
+                                    <Label fx:id="lbl_memberTotalGamesName" prefHeight="17.0" prefWidth="250.0" text="&lt;data&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="95.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="Wins:" />
+                                    <Label fx:id="lbl_memberWins" prefHeight="17.0" prefWidth="250.0" text="&lt;data&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="95.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="Losses:" />
+                                    <Label fx:id="lbl_memberLosses" prefHeight="17.0" prefWidth="250.0" text="&lt;data&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="95.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="100.0" text="W/L Ratio" />
+                                    <Label fx:id="lbl_memberWinLoseRation" prefHeight="17.0" prefWidth="250.0" text="&lt;data&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="95.0" />
+                           </children>
+                        </VBox>
+                        <Button id="btn_deleteMember" layoutX="1052.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleAddDeleteMemberAction" text="DELETE MEMBER" textFill="#a10000">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab_manageMembers" text="Manage Members">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="94.0" layoutY="144.0" prefHeight="85.0" prefWidth="303.0">
+                           <children>
+                              <HBox prefHeight="42.0" prefWidth="303.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="120.0" text="First Name">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="txtField_firstName" fx:id="txtField_firstName" text="John">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="42.0" prefWidth="303.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="120.0" text="Last Name">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="txtField_lastName" fx:id="txtField_lastName" text="Doe">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="128.0" layoutY="72.0" text="Register New Member">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Button id="btn_addMember" fx:id="btn_addMember" layoutX="186.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleAddMemberAction" text="Add Member">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="492.0" layoutY="6.0" text="CHESS CLUB">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

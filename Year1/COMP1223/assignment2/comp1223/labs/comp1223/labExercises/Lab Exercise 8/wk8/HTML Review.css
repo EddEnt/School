@@ -1,0 +1,41 @@
+/* this is CSS style commenting */
+
+h1{
+    color: red;
+}
+#specialParagraph{
+    color: red;
+}
+
+.evenP{
+    background: yellowgreen;
+    font-size: 1.2em;
+}
+#p4, #p6, #p8{
+    color: red;
+    text-decoration: underline;
+}
+#dog{
+    border: 8px solid green;
+}
+a:link{
+    color: gray;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    /*background: #ff0; */ /* Yellow color*/
+    background: rgb(0,33,222);
+    text-decoration: none;
+}
+
+#section3:hover{
+    color: red;
+}
+h1 + p{
+    background: lightblue;
+}
+li[title="first-item"]{
+    color: blue;
+}

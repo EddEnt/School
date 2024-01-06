@@ -1,0 +1,42 @@
+header{
+    background-color: black;
+    color: yellow;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 3px solid red;
+}
+nav, footer{
+    /*  background: gray; */
+    /* How to comment in CSS, negates anything inside it */
+    /* Top applies to nav tag and footer tag, below is class with .nav-footer */
+}
+.nav-footer{
+    background: gray;
+}
+main{
+    border-left: 2px solid forestgreen;
+    border-right: 2px solid forestgreen;
+    height: 200px;
+    width: 90%;
+    margin: auto auto;
+}
+nav a{
+    text-decoration: none;
+    color: darkblue;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: lightblue;
+
+}
+#main-table, #main-table tr,#main-table th, #main-table td{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+#main-table{
+    width: 30%;
+}
+
+#main-table tr:hover{
+    background: gray;
+}

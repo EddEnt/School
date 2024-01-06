@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+    background-color: #06f;
+
+
+}
+nav ul li{
+    display: inline-block;
+
+
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+nav ul li a:hover{
+    background: #09f;
+    text-decoration: underline;
+
+
+}
+.active{
+    background: #09f;
+    text-decoration: underline;
+    color: black;
+}
+header{
+    background: black;
+    color: skyblue;
+    padding: 5px;
+}
+main{
+    height: 100px;
+}
